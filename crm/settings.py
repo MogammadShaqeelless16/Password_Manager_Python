@@ -20,11 +20,11 @@ environ.Env.read_env()
 
 SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['passwordmanager-dev-khmf.2.us-1.fl0.io', '.vercel.app' , '.now.sh' , 'https://password-manager-python.onrender.com/', 'localhost' , '127..0.0.1']
+ALLOWED_HOSTS = ['passwordmanager-dev-khmf.2.us-1.fl0.io', '.vercel.app' , 'password-manager-python.vercel.app', '.now.sh' , 'password-manager-python.onrender.com', 'localhost' , '127.0.0.1']
 
-CSRF_TRUSTED_ORIGINS = ['https://password-manager-python.onrender.com/']
+CSRF_TRUSTED_ORIGINS = ['password-manager-python.onrender.com' ,'password-manager-python.vercel.app']
 
 
 # Application definition
@@ -78,14 +78,14 @@ WSGI_APPLICATION = 'crm.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-'''
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-'''
+
 
 #Postgre 
 
