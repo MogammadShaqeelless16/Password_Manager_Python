@@ -1,16 +1,12 @@
 {
-    "version": 2,
+    "version": 3,
     "builds": [
       {
-        "src": "crm/wsgi.py",
-        "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
-      },
-      {
-        "src": "build_files.sh",
-        "use": "@vercel/static-build",
+        "src": "vercel_app/wsgi.py",
+        "use": "@vercel/python-wsgi",
         "config": {
-          "distDir": "staticfiles_build"
+          "maxLambdaSize": "15mb",
+          "python": "3.10"
         }
       }
     ],
@@ -21,7 +17,8 @@
       },
       {
         "src": "/(.*)",
-        "dest": "crm/wsgi.py"
+        "dest": "vercel_app/wsgi.py"
       }
     ]
   }
+  
