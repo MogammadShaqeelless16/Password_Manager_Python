@@ -17,7 +17,7 @@ urlpatterns = [
 
     path('dashboard', views.dashboard, name="dashboard"),
 
-    path('password-generator', views.password_generator, name="password-generator"),
+    path('password-generator', views.generate_password, name="password-generator"),
 
     path('password-health', views.password_health, name="password-health"),
 

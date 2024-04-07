@@ -8,7 +8,10 @@ from django.contrib.auth.decorators import login_required
 from .models import Record
 
 from django.contrib import messages
+import random
+import string
 
+from django.http import JsonResponse
 
 
 # - Homepage 
@@ -80,16 +83,6 @@ def dashboard(request):
 
     return render(request, 'webapp/dashboard.html', context=context)
 
-# - Password Generator 
-@login_required(login_url='my-login')
-def password_generator(request):
-
-    my_records = Record.objects.all()
-
-    context = {'records': my_records}
-
-    return render(request, 'webapp/password-generator.html', context=context)
-
 
 # - Password Health
 @login_required(login_url='my-login')
@@ -121,8 +114,13 @@ def profile(request):
 
     return render(request, 'webapp/profile.html', context=context)
 
-
-
+# - Generate passwords
+@login_required(login_url='my-login')
+def generate_password(request):
+    length = 12  # Define the length of the password
+    characters = string.ascii_letters + string.digits + string.punctuation
+    generated_password = ''.join(random.choice(characters) for _ in range(length))
+    return render(request, 'webapp/password-generator.html', {'generated_password': generated_password})
 
 # - Create a record 
 
