@@ -5,8 +5,8 @@
         "src": "vercel_app/wsgi.py",
         "use": "@vercel/python-wsgi",
         "config": {
-          "maxLambdaSize": "15mb",
-          "python": "3.10"
+          "maxLambdaSize": "150mb",
+          "python": "3.12"
         }
       }
     ],
