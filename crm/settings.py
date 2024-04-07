@@ -24,7 +24,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['passwordmanager-dev-khmf.2.us-1.fl0.io', '.vercel.app' , 'password-manager-python.vercel.app', '.now.sh' , 'password-manager-python.onrender.com', 'localhost' , '127.0.0.1']
 
-CSRF_TRUSTED_ORIGINS = ['password-manager-python.onrender.com' ,'password-manager-python.vercel.app']
+CSRF_TRUSTED_ORIGINS = ['https://password-manager-python.onrender.com/' ,'https://password-manager-python.vercel.app']
 
 
 # Application definition
