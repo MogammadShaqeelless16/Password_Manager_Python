@@ -22,7 +22,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['passwordmanager-dev-khmf.2.us-1.fl0.io']
+ALLOWED_HOSTS = ['passwordmanager-dev-khmf.2.us-1.fl0.io', '.vercel.app' , '.now.sh' , 'localhost' , '127..0.0.1']
 
 CSRF_TRUSTED_ORIGINS = ['https://passwordmanager-dev-khmf.2.us-1.fl0.io']
 
