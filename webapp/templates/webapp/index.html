@@ -1,0 +1,54 @@
+{% extends 'webapp/base.html' %}
+
+{% block content %}
+    
+<body>
+
+    <!-- Logo section -->
+    <div class="text-center">
+        <img src="/static/assets/logo.png" alt="EEE Logo" class="logo">
+    </div>
+
+    <br>
+    <br>
+
+    <!-- Welcome message -->
+    <div class="text-center">
+        <h1>Welcome to the EEE (Encryption Elite Enforces) Password Manager</h1>
+        <p>This app was built for students and businesses alike to better manage your passwords and sensitive information.</p>
+    </div>
+    <br>
+        <!-- Call to action button -->
+    <div class="text-center">
+        <a class="btn btn-primary" type="button" href="{% url 'register' %}">Create your account &nbsp; <i class="fa fa-user-plus" aria-hidden="true"></i></a>
+    </div>
+    <br>
+    <!-- Team section -->
+    <div class="text-center">
+        <h2>Our Team</h2>
+        <p>Meet the dedicated individuals behind this project:</p>
+        <ul>
+            <li><span class="icon"><i class="fas fa-user-tie"></i></span> Colleen - Project Manager <a href="https://www.linkedin.com/in/colleen-profile" target="_blank"><i class="fab fa-linkedin"></i></a> <a href="https://github.com/colleen-profile" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><span class="icon"><i class="fas fa-code"></i></span> Kopano - Lead Developer <a href="https://www.linkedin.com/in/kopano-profile" target="_blank"><i class="fab fa-linkedin"></i></a> <a href="https://github.com/kopano-profile" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><span class="icon"><i class="fas fa-paint-brush"></i></span> Sinoviyo - UI/UX Designer <a href="https://www.linkedin.com/in/sinoviyo-profile" target="_blank"><i class="fab fa-linkedin"></i></a> <a href="https://github.com/sinoviyo-profile" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><span class="icon"><i class="fas fa-paint-brush"></i></span> Zainab - UI/UX Designer <a href="https://www.linkedin.com/in/zainab-profile" target="_blank"><i class="fab fa-linkedin"></i></a> <a href="https://github.com/zainab-profile" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><span class="icon"><i class="fas fa-code"></i></span> Shaqeel - Lead Developer <a href="https://www.linkedin.com/in/shaqeel-profile" target="_blank"><i class="fab fa-linkedin"></i></a> <a href="https://github.com/shaqeel-profile" target="_blank"><i class="fab fa-github"></i></a></li>
+            <!-- Add more team members and their roles -->
+        </ul>
+    </div>
+
+    <!-- Open source message -->
+    <div class="text-center">
+        <p>This project is open source and contributions are welcome. Visit our GitHub repository to learn more.</p>
+        <a href="https://github.com/your/repository" class="btn btn-secondary">GitHub Repository</a>
+    </div>
+
+    <br>
+
+
+
+    <!-- Add your JavaScript or other scripts here -->
+</body>
+
+
+{% endblock %}

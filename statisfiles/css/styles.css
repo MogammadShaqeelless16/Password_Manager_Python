@@ -1,0 +1,39 @@
+
+.form-layout{
+
+    border-radius: 15px;
+    width: 500px;
+
+}
+
+.message-text{
+
+    color: white;
+
+}
+
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .form-layout {
+      /* Styles for smaller screens (e.g., tablets) */
+      max-width: 90%; /* Adjust max-width for smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .form-layout {
+      /* Styles for even smaller screens (e.g., smartphones) */
+      max-width: 100%; /* Set full width for smartphones */
+    }
+  }
